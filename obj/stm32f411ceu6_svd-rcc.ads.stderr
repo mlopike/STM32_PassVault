@@ -1,0 +1,4 @@
+stm32f411ceu6_svd-rcc.ads:154:09: warning: pragma Restrictions (No_Exception_Propagation) in effect [-gnatw.x]
+stm32f411ceu6_svd-rcc.ads:154:09: warning: "Program_Error" may call Last_Chance_Handler [-gnatw.x]
+stm32f411ceu6_svd-rcc.ads:868:09: warning: pragma Restrictions (No_Exception_Propagation) in effect [-gnatw.x]
+stm32f411ceu6_svd-rcc.ads:868:09: warning: "Program_Error" may call Last_Chance_Handler [-gnatw.x]

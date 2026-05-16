@@ -1,0 +1,152 @@
+V "GNAT Lib v2021"
+A -O2
+A -gnatA
+A --RTS=C:\gnat\2021-arm-elf\arm-eabi\lib\gnat\zfp-cortex-m4\
+A -mlittle-endian
+A -mthumb
+A -mfloat-abi=soft
+A -mcpu=cortex-m4
+A -gnatwa
+A -march=armv7e-m
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_ELABORATION_CODE
+
+U stm32f411ceu6_svd.usart%s  stm32f411ceu6_svd-usart.ads  272d3f5a NE OO PR PK
+W hal%s			hal.ads			hal.ali
+W stm32f411ceu6_svd%s	stm32f411ceu6_svd.ads	stm32f411ceu6_svd.ali
+W system%s		system.ads		system.ali
+
+D hal.ads		20260316114106 2b42c80e hal%s
+D interfac.ads		20210520153144 edec285f interfaces%s
+D stm32f411ceu6_svd.ads	20260316114106 958dc43a stm32f411ceu6_svd%s
+D stm32f411ceu6_svd-usart.ads  20260316114106 db035f78 stm32f411ceu6_svd.usart%s
+D system.ads		20210520153144 42e16c16 system%s
+G a e
+G c Z s s [sr_registerIP stm32f411ceu6_svd__usart 18 9 none]
+G c Z s s [dr_registerIP stm32f411ceu6_svd__usart 62 9 none]
+G c Z s s [brr_registerIP stm32f411ceu6_svd__usart 80 9 none]
+G c Z s s [cr1_registerIP stm32f411ceu6_svd__usart 98 9 none]
+G c Z s s [cr2_registerIP stm32f411ceu6_svd__usart 161 9 none]
+G c Z s s [cr3_registerIP stm32f411ceu6_svd__usart 206 9 none]
+G c Z s s [gtpr_registerIP stm32f411ceu6_svd__usart 257 9 none]
+G c Z s s [usart_peripheralIP stm32f411ceu6_svd__usart 279 9 none]
+X 1 hal.ads
+34K9*HAL 166e8 4|7w6 40r24 59r27 66r23 76r38 77r38 86r24 128r24 132r24 157r29
+. 158r30 165r24 171r24 185r24 232r24 253r30 254r29 263r24
+37M9*Bit 4|128r28 165r28 171r28
+39M9*UInt2 4|158r34
+43M9*UInt4 4|76r42 157r33
+51M9*UInt9 4|59r31
+53M9*UInt8<2|68M9> 4|253r34 254r33
+58M9*UInt12 4|77r42
+66M9*UInt16<2|71M9> 4|86r28 132r28 263r28
+67M9*UInt17 4|185r28
+73M9*UInt20 4|232r28
+77M9*UInt22 4|40r28
+79M9*UInt23 4|66r27
+X 2 interfac.ads
+68M9*Unsigned_8
+71M9*Unsigned_16
+X 3 stm32f411ceu6_svd.ads
+10K9*stm32f411ceu6_SVD 73e22 4|10r9 319r5
+42m4*USART1_Base{5|90M9} 4|309r30
+43m4*USART2_Base{5|90M9} 4|313r30
+44m4*USART6_Base{5|90M9} 4|317r30
+X 4 stm32f411ceu6_svd-usart.ads
+10K27*USART 3|10k9 4|319l23 319e28
+18R9*SR_Register 42e6 45r8 281r22
+20b7*PE{boolean} 46r7
+22b7*FE{boolean} 47r7
+24b7*NF{boolean} 48r7
+26b7*ORE{boolean} 49r7
+28b7*IDLE{boolean} 50r7
+30b7*RXNE{boolean} 51r7
+32b7*TC{boolean} 52r7
+34b7*TXE{boolean} 53r7
+36b7*LBD{boolean} 54r7
+38b7*CTS{boolean} 55r7
+40m7*Reserved_10_31{1|77M9} 56r7
+59M12*DR_DR_Field{1|51M9} 64r23
+62R9*DR_Register 68e6 71r8 283r22
+64m7*DR{59M12} 72r7
+66m7*Reserved_9_31{1|79M9} 73r7
+76M12*BRR_DIV_Fraction_Field{1|43M9} 82r24
+77M12*BRR_DIV_Mantissa_Field{1|58M9} 84r24
+80R9*BRR_Register 88e6 91r8 285r22
+82m7*DIV_Fraction{76M12} 92r7
+84m7*DIV_Mantissa{77M12} 93r7
+86m7*Reserved_16_31{1|66M9} 94r7
+98R9*CR1_Register 134e6 137r8 287r22
+100b7*SBK{boolean} 138r7
+102b7*RWU{boolean} 139r7
+104b7*RE{boolean} 140r7
+106b7*TE{boolean} 141r7
+108b7*IDLEIE{boolean} 142r7
+110b7*RXNEIE{boolean} 143r7
+112b7*TCIE{boolean} 144r7
+114b7*TXEIE{boolean} 145r7
+116b7*PEIE{boolean} 146r7
+118b7*PS{boolean} 147r7
+120b7*PCE{boolean} 148r7
+122b7*WAKE{boolean} 149r7
+124b7*M{boolean} 150r7
+126b7*UE{boolean} 151r7
+128m7*Reserved_14_14{1|37M9} 152r7
+130b7*OVER8{boolean} 153r7
+132m7*Reserved_16_31{1|66M9} 154r7
+157M12*CR2_ADD_Field{1|43M9} 163r24
+158M12*CR2_STOP_Field{1|39M9} 181r24
+161R9*CR2_Register 187e6 190r8 289r22
+163m7*ADD{157M12} 191r7
+165m7*Reserved_4_4{1|37M9} 192r7
+167b7*LBDL{boolean} 193r7
+169b7*LBDIE{boolean} 194r7
+171m7*Reserved_7_7{1|37M9} 195r7
+173b7*LBCL{boolean} 196r7
+175b7*CPHA{boolean} 197r7
+177b7*CPOL{boolean} 198r7
+179b7*CLKEN{boolean} 199r7
+181m7*STOP{158M12} 200r7
+183b7*LINEN{boolean} 201r7
+185m7*Reserved_15_31{1|67M9} 202r7
+206R9*CR3_Register 234e6 237r8 291r22
+208b7*EIE{boolean} 238r7
+210b7*IREN{boolean} 239r7
+212b7*IRLP{boolean} 240r7
+214b7*HDSEL{boolean} 241r7
+216b7*NACK{boolean} 242r7
+218b7*SCEN{boolean} 243r7
+220b7*DMAR{boolean} 244r7
+222b7*DMAT{boolean} 245r7
+224b7*RTSE{boolean} 246r7
+226b7*CTSE{boolean} 247r7
+228b7*CTSIE{boolean} 248r7
+230b7*ONEBIT{boolean} 249r7
+232m7*Reserved_12_31{1|73M9} 250r7
+253M12*GTPR_PSC_Field{1|53M9} 259r24
+254M12*GTPR_GT_Field{1|53M9} 261r24
+257R9*GTPR_Register 265e6 268r8 293r22
+259m7*PSC{253M12} 269r7
+261m7*GT{254M12} 270r7
+263m7*Reserved_16_31{1|66M9} 271r7
+279R9*USART_Peripheral 295e6 297r8 308r28 312r28 316r28
+281r7*SR{18R9} 298r7
+283r7*DR{62R9} 299r7
+285r7*BRR{80R9} 300r7
+287r7*CR1{98R9} 301r7
+289r7*CR2{161R9} 302r7
+291r7*CR3{206R9} 303r7
+293r7*GTPR{257R9} 304r7
+308r4*USART1_Periph{279R9}
+312r4*USART2_Periph{279R9}
+316r4*USART6_Periph{279R9}
+X 5 system.ads
+60K9*System 4|8w6 43r24 69r24 89r24 135r24 188r24 235r24 266r24 5|172e11
+90M9*Address
+114n41*Low_Order_First{114E9} 4|43r31 69r31 89r31 135r31 188r31 235r31 266r31
+
